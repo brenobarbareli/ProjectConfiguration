@@ -1,4 +1,12 @@
-export function RepositoryItem(props) {
+interface RepositoryItemProps {
+  repository: {
+    name: string;
+    description: string;
+    html_url: string;
+  };
+}
+
+export function RepositoryItem(props: RepositoryItemProps) {
   return (
     //sempre que for passar uma função js, colocar entre{}
     //?? desconsidera que o 0 ou vazio é um valor invalido

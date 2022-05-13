@@ -7,6 +7,12 @@ module.exports = {
       },
     ],
     [
+      '@babel/preset-typescript',
+      {
+        useBuiltIns: 'entry',
+      },
+    ],
+    [
       '@babel/preset-react',
       {
         useBuiltIns: 'entry',
