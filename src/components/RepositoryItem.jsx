@@ -4,9 +4,9 @@ export function RepositoryItem(props) {
     //?? desconsidera que o 0 ou vazio é um valor invalido
     // props.repository?.name onde o ? verifica se o repositorio está nulo, se estiver, ja retorna o valor padrão
     <li>
-      <strong>{props.repository?.name ?? 'Default'}</strong>
+      <strong>{props.repository?.name}</strong>
       <p>{props.repository.description}</p>
-      <a href={props.repository.link}>acessar repositorio</a>
+      <a href={props.repository.html_url}>acessar repositorio</a>
     </li>
   );
 }
